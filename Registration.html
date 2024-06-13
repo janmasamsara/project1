@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+       <form id="myform">
+            <h2>Registration Form</h2>
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+
+            <div class="input-field">
+                <label>First Name</label>
+                <input type="text" placeholder="Enter your first name" id="contact-name">
+                <span id="fname-error"></span>
+            </div>
+
+            <div class="input-field">
+                <label>Last Name</label>
+                <input type="text" placeholder="Enter your last name" id="contact-lname">
+                <span id="lname-error"></span>
+            </div>
+
+           <div class="input-field">
+                <label>Phone No.</label>
+                <input type="tel" placeholder="123-4567-853" pattern="[0-9]{10}" id="contact-phone">
+                <span id="phone-error"></span>
+            </div>
+
+            <div class="input-field">
+                <label>Email Id</label>
+                <input type="email" placeholder="Enter email" id="contact-email" >
+                <span id="email-error"></span>
+            </div>
+
+           <div class="input-field">
+                <label>Password:</label>
+                <input type="password" placeholder="Enter Password"  id="contact-password" >
+                <span id="pwd-error"></span>
+            </div>
+
+
+            <div class="input-field">
+                <label>Confirm Password:</label>
+                <input type="password" placeholder="Re-type password" id="contact-cpassword">
+                <span id="cpwd-error"></span>
+            </div>
+        
+            <div class="form-action" >
+                <button>Register</button>
+            </div>
+
+        </form>
+
+    </div>
+    <script src="rg.js"></script>
+</body>
+</html>

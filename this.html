@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript "this"</h1>
+
+ <!--------
+    var a=10;
+    console.log(this);
+
+    "use strict"
+    function x(){
+        console.log(this);
+
+    }
+    x();
+    --------------->
+<script>
+    let name={
+        first:"ramu",
+        last:"somina"
+    };
+
+    let name2={
+        first:"somu",
+        last:"rajan",
+    };
+    let printfname=function(hometown)
+                    {
+                        console.log(this.first+" "+this.last+" "+ "from"+" "+hometown);
+
+                    }
+   //printfname.call(name,"nellore");
+   //printfname.apply(name,["nellore"])
+   let printMyname=printfname.bind(name,"delhi")
+   console.log(printMyname);
+   printMyname();
+</script>
+</body>
+</html>

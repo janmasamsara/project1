@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="demo">Welcome to closure by Js</h1>
+    <script>
+        var output;
+        function grandfather(){
+            var assets="100 acres land";
+            function father(){
+                var money="1cr";
+                console.log("Money-",money);
+               // console.log("grandfather help i need:",assets);
+               //adding above line we can see the closure
+
+            }
+            console.log("assets of -",assets);
+            father();
+        
+        }
+        grandfather();
+    </script>
+    
+</body>
+</html>
