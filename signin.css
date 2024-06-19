@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.container{
+    width:300px;
+    max-width: 300px;
+    margin: auto;
+    border:0.5px solid gainsboro;
+    border-radius: 5px;
+    padding-left:20px;
+    height:350px;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+button{
+    background-color: orange;
+    border: none;
+    outline: none;
+    padding:10px;
+    width:90%;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button:hover{
+    outline:2px solid skyblue;
+}
+#name{
+    width:90%;
+    padding:6px;
+    border-radius: 5px;
+    border:1px solid black;
+}
+.container a{
+    color:rgb(20, 158, 212);
+}
+details p{
+    color: rgb(20, 158, 212);
+}
